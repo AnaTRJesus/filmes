@@ -3,15 +3,22 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PrincipalModule } from './principal/principal.module';
+import { ConteudoModule } from './conteudo/conteudo.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PrincipalModule,
+    ConteudoModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
