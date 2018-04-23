@@ -1,6 +1,7 @@
 <div class="jumbotron">
   <h1 class="display-4">Nossa lista de filmes</h1>
   <p class="lead">Atividade Curso-Angular</p>
+  <app-form-pesquisa (pesquisa)="carregaLista($event)"></app-form-pesquisa>
   <hr class="my-4">
-  <app-filme-card (apaga)="apagaFilme($event)" [filme]="filme" *ngFor="let filme of listaFilmes"></app-filme-card>
+  <app-filme-card (apaga)="apagaFilme($event)" [filme]="filme" *ngFor="let filme of listaFilmes"></app-filme-card> 
 </div>

@@ -1,0 +1,5 @@
+<form class="form-inline" #f='ngForm'(ngSubmit)="onSubmit(f)">
+  <label for="nome">Nome</label>
+  <input type='text' name="nome" id="nome" class="form-control" [(ngModel)]="nome">
+  <button type="submit" class="btn btn-primary">Pesquisar</button>
+</form>
